@@ -2,16 +2,16 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { AuthTabs } from '@/components/auth/AuthTabs';
-import { AuthService } from '@/lib/auth';
+// import { AuthService } from '@/lib/auth';
 
 export default function AuthPage() {
-  const router = useRouter();
+  // const router = useRouter();
 
-  useEffect(() => {
-    if (AuthService.isAuthenticated()) {
-      router.push('/dashboard');
-    }
-  }, [router]);
+  // useEffect(() => {
+  //   if (AuthService.isAuthenticated()) {
+  //     router.push('/dashboard');
+  //   }
+  // }, [router]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 flex items-center justify-center p-4">
